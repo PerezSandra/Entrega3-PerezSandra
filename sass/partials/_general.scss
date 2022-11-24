@@ -1,0 +1,110 @@
+
+@use '_variables.scss';
+
+
+body {
+    background-image: linear-gradient(50deg,#c5f3f3,#f9b6d9 );
+    overflow:hidden;
+    overflow-x:hidden;overflow-y:scroll;
+    overflow:-moz-scrollbars-vertical;
+}
+
+.menu a {
+    color: rgb(97, 85, 85) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    background-color: rgb(252, 195, 238);
+    border: solid rgb(239, 175, 239) 3px;
+    border-radius: 40px;
+    list-style-type: none;
+    text-decoration: none;
+   
+    
+  }
+
+  .container-fluid {
+    
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+  .botonSearch{
+    background-color: #c5f4ef;
+    &:hover{
+      transform: scale(1.5);
+      background-color: aqua;
+     
+    }
+    
+  }
+  
+  .destacado{
+    font-size: 40px;
+    color: rgb(105, 100, 100);
+    font-family: sans-serif;
+    background-color: rgb(200, 193, 193);
+    margin-top: 150px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .letraColor {
+    font-size: 100%;
+    color: rgb(192, 30, 189);
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+    
+  
+/////////////////////* FOOTER *////////////////////
+
+
+.navRedes{
+  background-color: rgb(218, 248, 28);;
+  border: white 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 300px;
+    .redes{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    }
+  }
+
+
+  .iconoRedes{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: rgb(249, 78, 198);
+    list-style-type: none;
+    text-decoration: none;
+    &:hover{
+        background-color: rgb(62, 218, 253);
+        transform: scale(1.5);
+    }
+  }
+
+
+
+
+@media screen and (min-width:320px) {
+  body{
+    overflow-x: hidden;
+    
+  }
+  
+}
+  

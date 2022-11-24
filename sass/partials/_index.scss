@@ -1,0 +1,69 @@
+
+@import './_variables.scss';
+
+
+body{
+  overflow-x: hidden;
+}
+
+.logo {
+    height: 350px;
+    width:450px;
+    margin: 20px 500px 50px 500px;
+    padding-left: 50px;
+    &:hover{
+        transform: scale(1.3);
+    }
+  }
+
+  .headerH1{
+    color: $color-titulo;
+    margin-left: 470px;
+    font-family: $font-parrafos;
+    font-size: $titulo-primario;
+    padding-top: 100px;
+    padding-left: 85px;
+  }
+  
+  .mainH3 {
+    font-size: $titulo-secundario;
+    color: black;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  
+
+  .imagenCarousel{
+    width: 500px;
+    height: 500px;
+  }
+  
+  .fotosCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 300px;
+  }
+
+
+
+@media screen and (min-width:320px) {
+  body{
+    overflow-x: hidden;
+    
+  }
+
+  .logo{
+    margin: 0;
+    margin-left: -85px;
+  }
+  .headerH1{
+    display: none;
+  }
+  .imagenCarousel{
+    width: 300px;
+    height: 300px;
+  }
+
+}

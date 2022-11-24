@@ -1,0 +1,52 @@
+@import './_variables.scss';
+
+.boton {
+    color: $color-parrafos ;
+    font-family: $font-titulos ;
+    font-size: $titulo-secundario;
+    background-color: rgb(228, 187, 236);
+    border: solid 5px rgb(248, 247, 184) ;
+    margin: 70px;
+    margin-left:45%;
+  }
+  
+
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  .suscribite{
+    color: rgb(75, 67, 67);
+    margin-top: 100px;
+  }
+
+  .beneficios{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .containerDescuentos {
+    background-color: rgb(210, 154, 210);
+    border: 8px solid yellowgreen;
+    border-radius: 2px rgb(245, 65, 197);
+  }
+
+
+  @media  (max-width:320px) {
+
+    body{
+      overflow-x:hidden;
+    }
+
+
+    .beneficios{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
