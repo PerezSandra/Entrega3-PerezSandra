@@ -7,7 +7,7 @@ body{
 }
 
 .logo {
-    height: 350px;
+    height: 400px;
     width:450px;
     margin: 20px 500px 50px 500px;
     padding-left: px;
@@ -22,11 +22,20 @@ body{
     font-family: $font-parrafos;
     font-size: $titulo-primario;
     padding-top: 100px;
-    padding-left: 85px;
+    padding-left: 80px;
   }
   
+  .headerH1{
+    color: $color-titulo;
+    margin-left: 470px;
+    font-family: $font-parrafos;
+    font-size: $titulo-primario;
+    padding-top: 100px;
+    padding-left: 60px;
+  }
+
   .mainH3 {
-    font-size: $titulo-secundario;
+    font-size: $font-parrafos;
     color: black;
     padding-left: 30px;
     padding-right: 40px;
@@ -48,7 +57,7 @@ body{
 
 
 
-/*@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
   body{
     overflow-x: hidden;
     
@@ -56,7 +65,7 @@ body{
 
   .logo{
     margin: 0;
-    margin-left: -85px;
+    margin-left: -60px;
   }
   .headerH1{
     display: none;
@@ -66,4 +75,4 @@ body{
     height: 300px;
   }
 
-}*/
+}

@@ -1,6 +1,13 @@
 @import './_variables.scss';
 
 
+.mainH3{
+    font-size: $titulo-secundario;
+}
+
+
+
+
 
 @media screen and (min-width:320px) {
     .destacado{

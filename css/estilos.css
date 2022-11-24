@@ -96,10 +96,10 @@ body {
 }
 
 .logo {
-  height: 350px;
+  height: 400px;
   width: 450px;
   margin: 20px 500px 50px 500px;
-  padding-left: 50px;
+  padding-left: px;
 }
 .logo:hover {
   transform: scale(1.3);
@@ -111,11 +111,20 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 30px;
   padding-top: 100px;
-  padding-left: 85px;
+  padding-left: 80px;
+}
+
+.headerH1 {
+  color: black;
+  margin-left: 470px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-left: 60px;
 }
 
 .mainH3 {
-  font-size: 20px;
+  font-size: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: black;
   padding-left: 30px;
   padding-right: 40px;
@@ -134,13 +143,13 @@ body {
   padding-bottom: 300px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
   }
   .logo {
     margin: 0;
-    margin-left: -85px;
+    margin-left: -60px;
   }
   .headerH1 {
     display: none;
@@ -192,6 +201,10 @@ body {
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
+.mainH3 {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 320px) {
   .destacado {
     font-size: 25px;
