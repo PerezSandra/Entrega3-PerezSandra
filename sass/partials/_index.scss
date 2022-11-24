@@ -10,7 +10,7 @@ body{
     height: 350px;
     width:450px;
     margin: 20px 500px 50px 500px;
-    padding-left: 50px;
+    padding-left: px;
     &:hover{
         transform: scale(1.3);
     }
@@ -48,7 +48,7 @@ body{
 
 
 
-@media screen and (min-width:320px) {
+/*@media screen and (min-width:320px) {
   body{
     overflow-x: hidden;
     
@@ -66,4 +66,4 @@ body{
     height: 300px;
   }
 
-}
+}*/
