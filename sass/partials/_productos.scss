@@ -1,20 +1,27 @@
 @import './_variables.scss';
 
 
-.mainH3{
-    font-size: $titulo-secundario;
+.mainH3 p{
+    font-size: 20px;
+}
+
+.mainP p{
+    font-size: $font-parrafos;
 }
 
 
 
 
-
-@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
     .destacado{
         font-size: 25px;
     }
-    .mainH3{
+    .mainH3 p{
         font-size: 15px;
+    }
+    .destacado{
+        font-size: 25px;
+        
     }
 
 }

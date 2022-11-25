@@ -123,8 +123,8 @@ body {
   padding-left: 60px;
 }
 
-.mainH3 {
-  font-size: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.mainH3 p {
+  font-size: 20px;
   color: black;
   padding-left: 30px;
   padding-right: 40px;
@@ -201,16 +201,23 @@ body {
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
-.mainH3 {
+.mainH3 p {
   font-size: 20px;
 }
 
-@media screen and (min-width: 320px) {
+.mainP p {
+  font-size: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 320px) {
   .destacado {
     font-size: 25px;
   }
-  .mainH3 {
+  .mainH3 p {
     font-size: 15px;
+  }
+  .destacado {
+    font-size: 25px;
   }
 }
 /*COLORES*/
