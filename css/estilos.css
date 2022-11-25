@@ -159,22 +159,6 @@ body {
     height: 300px;
   }
 }
-@media screen and (min-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
-  .logo {
-    margin: 0;
-    margin-left: -60px;
-  }
-  .headerH1 {
-    display: none;
-  }
-  .imagenCarousel {
-    width: 300px;
-    height: 300px;
-  }
-}
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
@@ -253,8 +237,12 @@ body {
 .ubicacion .mapa {
   height: 500px;
   width: 800px;
-  padding-left: 250px;
-  margin-left: -220px;
+  padding-left: 100px;
+  margin-left: -300px;
+}
+
+.containerMapa .mapa {
+  margin-left: 5px;
 }
 
 .boton {
@@ -263,6 +251,10 @@ body {
   font-size: 20px;
   background-color: rgb(228, 187, 236);
   border: solid 5px rgb(248, 247, 184);
+}
+
+.containerComentarios .boton {
+  margin-left: 60px;
 }
 
 .containerComentarios {
@@ -283,9 +275,9 @@ body {
   font-size: 20px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .ubicacion .mapa {
-    width: 520px;
+    width: 250px;
     height: 320px;
     padding-left: 2px;
     padding-right: -1px;
