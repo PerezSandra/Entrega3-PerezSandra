@@ -27,10 +27,6 @@ body {
 .botonSearch {
   background-color: #c5f4ef;
 }
-.botonSearch:hover {
-  transform: scale(1.5);
-  background-color: aqua;
-}
 
 .destacado {
   font-size: 40px;
@@ -141,6 +137,11 @@ body {
   align-items: center;
   padding-top: 60px;
   padding-bottom: 300px;
+}
+
+.accordion-button {
+  color: rgb(16, 15, 15);
+  background-color: rgb(222, 159, 244);
 }
 
 @media screen and (max-width: 320px) {
@@ -320,9 +321,9 @@ body {
 }
 
 .containerDescuentos {
-  background-color: rgb(210, 154, 210);
-  border: 8px solid yellowgreen;
-  border-radius: 2px rgb(245, 65, 197);
+  background-color: rgb(237, 149, 237);
+  border: 8px solid rgb(46, 253, 9);
+  border-radius: 4px rgb(245, 65, 197);
 }
 
 @media (max-width: 320px) {
