@@ -186,7 +186,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .cardsCarrito .card {
   background-color: rgb(247, 149, 247);
@@ -218,6 +218,19 @@ body {
   background-color: #f8b1d6;
 }
 
+@media screen and (min-width: 320px) {
+  .cardsCarrito {
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .cardsCarrito {
+    padding-left: 6px;
+  }
+  .destacado {
+    font-size: 25px;
+  }
+}
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
@@ -236,72 +249,66 @@ body {
   justify-content: center;
 }
 
-.grafico {
-  padding-top: 40px;
-  height: 30rem;
+.conejoGrafico {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .cardProducto {
   background-color: rgb(226, 187, 219);
-  border: 3px yellowgreen;
+  border: solid 5px rgb(227, 227, 37);
+  /*.productoContainer1{
+      display: flex;
+      justify-content: flex-start;
+  }*/
 }
-
-.containerCrema {
-  background-color: antiquewhite;
-}
-
-.pCrema {
+.cardProducto .descripcionProductos {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-/*.productoContainer1{
-    display: flex;
-    justify-content: flex-start;
-}*/
-.descripcionProductos {
-  display: flex;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 320px) {
-  .destacado {
+@media screen and (min-width: 320px) {
+  .cardProducto .destacado {
     font-size: 35px;
   }
-  .mainH3 p {
-    font-size: 15px;
+  .cardProducto .mainH3 p {
+    display: none;
   }
-  .destacado {
+  .cardProducto .destacado {
     font-size: 25px;
   }
-  .descripcionProductos {
+  .cardProducto .descripcionProductos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
   }
-  .cardProducto {
+  .cardProducto .cardProducto {
     padding-top: 10px;
     margin-top: 20px;
     margin-left: 15px;
   }
+  .cardProducto .conejoGrafico {
+    width: 300px;
+    height: 300px;
+    margin-left: 12px;
+  }
 }
 @media screen and (min-width: 375px) {
-  .destacado {
+  .cardProducto .destacado {
     font-size: 20px;
   }
-  .descripcionProductos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .cardProducto .cardProducto {
+    margin-left: 40px;
   }
-  .cardProducto {
-    margin-top: 20px;
-    margin-left: 200px;
+  .cardProducto .conejoGrafico {
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 30px;
   }
 }
+
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
