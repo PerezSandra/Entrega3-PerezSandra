@@ -11,6 +11,7 @@ body{
     width:450px;
     margin: 20px 500px 50px 500px;
     padding-left: px;
+    
     &:hover{
         transform: scale(1.3);
     }
@@ -79,6 +80,28 @@ body{
   .imagenCarousel{
     width: 300px;
     height: 300px;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  body{
+    overflow-x: hidden;
+    
+  }
+
+  .logo{
+    height: 20rem;
+    width: 20rem;
+    margin: 0;
+    margin-right: -40px;
+  }
+  .headerH1{
+    display: none;
+  }
+  .imagenCarousel{
+    width: 150px;
+    height: 150px;
   }
 
 }

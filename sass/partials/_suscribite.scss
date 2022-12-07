@@ -3,7 +3,7 @@
 .boton {
     color: $color-parrafos ;
     font-family: $font-titulos ;
-    font-size: $titulo-secundario;
+    font-size: $boton;
     background-color: rgb(228, 187, 236);
     border: solid 5px rgb(248, 247, 184) ;
     margin: 70px;
@@ -36,6 +36,13 @@
     border-radius: 4px rgb(245, 65, 197);
   }
 
+  .containerSuscripcion{
+    body {
+      background-color: linear-gradient(50deg,#fbfcac,#fc6cb6 );
+      
+  }
+  
+  }
 
   @media  (max-width:320px) {
 

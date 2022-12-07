@@ -29,7 +29,7 @@ body {
 }
 
 .destacado {
-  font-size: 40px;
+  font-size: 60px;
   color: rgb(105, 100, 100);
   font-family: sans-serif;
   background-color: rgb(200, 193, 193);
@@ -105,7 +105,7 @@ body {
   color: black;
   margin-left: 470px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   padding-top: 100px;
   padding-left: 80px;
 }
@@ -114,13 +114,13 @@ body {
   color: black;
   margin-left: 470px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   padding-top: 100px;
   padding-left: 60px;
 }
 
 .mainH3 p {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   padding-left: 30px;
   padding-right: 40px;
@@ -159,6 +159,24 @@ body {
   .imagenCarousel {
     width: 300px;
     height: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    height: 20rem;
+    width: 20rem;
+    margin: 0;
+    margin-right: -40px;
+  }
+  .headerH1 {
+    display: none;
+  }
+  .imagenCarousel {
+    width: 150px;
+    height: 150px;
   }
 }
 /*COLORES*/
@@ -249,13 +267,39 @@ body {
 
 @media screen and (max-width: 320px) {
   .destacado {
-    font-size: 25px;
+    font-size: 35px;
   }
   .mainH3 p {
     font-size: 15px;
   }
   .destacado {
     font-size: 25px;
+  }
+  .descripcionProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cardProducto {
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .destacado {
+    font-size: 20px;
+  }
+  .descripcionProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cardProducto {
+    margin-top: 20px;
+    margin-left: 200px;
   }
 }
 /*COLORES*/
@@ -286,7 +330,7 @@ body {
 .boton {
   color: rgb(97, 85, 85);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   background-color: rgb(228, 187, 236);
   border: solid 5px rgb(248, 247, 184);
 }
@@ -310,7 +354,7 @@ body {
 
 .letraColor {
   color: rgb(192, 30, 189);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 320px) {
@@ -361,6 +405,10 @@ body {
   background-color: rgb(237, 149, 237);
   border: 8px solid rgb(46, 253, 9);
   border-radius: 4px rgb(245, 65, 197);
+}
+
+.containerSuscripcion body {
+  background-color: linear-gradient(50deg, #fbfcac, #fc6cb6);
 }
 
 @media (max-width: 320px) {
