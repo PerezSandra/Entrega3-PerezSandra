@@ -42,7 +42,7 @@ body {
 }
 
 .letraColor {
-  font-size: 100%;
+  font-size: 50px;
   color: rgb(192, 30, 189);
   padding-top: 80px;
   display: flex;
@@ -151,14 +151,19 @@ body {
   }
   .logo {
     margin: 0;
-    margin-left: -60px;
+    width: 250px;
+    height: 250px;
   }
   .headerH1 {
     display: none;
   }
   .imagenCarousel {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
+  }
+  .letraColor {
+    display: none;
   }
 }
 @media screen and (max-width: 375px) {
@@ -166,17 +171,15 @@ body {
     overflow-x: hidden;
   }
   .logo {
-    height: 20rem;
-    width: 20rem;
-    margin: 0;
-    margin-right: -40px;
+    height: 200px;
+    width: 200px;
   }
   .headerH1 {
     display: none;
   }
   .imagenCarousel {
-    width: 150px;
-    height: 150px;
+    width: 5px;
+    height: 5px;
   }
 }
 /*COLORES*/
@@ -222,6 +225,9 @@ body {
   .cardsCarrito {
     padding-left: 5px;
   }
+  .destacado {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 375px) {
   .cardsCarrito {
@@ -249,31 +255,26 @@ body {
   justify-content: center;
 }
 
-.conejoGrafico {
-  height: 400px;
-  width: 400px;
+.containerGrafico {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+.containerGrafico .figure {
+  height: 600px;
+  width: 600px;
+  padding-top: 50px;
 }
 
 .cardProducto {
   background-color: rgb(226, 187, 219);
   border: solid 5px rgb(227, 227, 37);
-  /*.productoContainer1{
-      display: flex;
-      justify-content: flex-start;
-  }*/
-}
-.cardProducto .descripcionProductos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 @media screen and (min-width: 320px) {
   .cardProducto .destacado {
     font-size: 35px;
   }
-  .cardProducto .mainH3 p {
+  .cardProducto .mainH3 {
     display: none;
   }
   .cardProducto .destacado {
@@ -283,11 +284,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 20px;
+    margin-left: 20px;
   }
-  .cardProducto .cardProducto {
+  .cardProducto .descripcionProductos .cardProducto {
     padding-top: 10px;
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 30px;
   }
   .cardProducto .conejoGrafico {
     width: 300px;
@@ -299,13 +302,16 @@ body {
   .cardProducto .destacado {
     font-size: 20px;
   }
-  .cardProducto .cardProducto {
-    margin-left: 40px;
-  }
   .cardProducto .conejoGrafico {
-    height: 200px;
-    margin-left: 40px;
+    height: 100px;
+    width: 100px;
     margin-top: 30px;
+  }
+  .cardProducto .mainH3 {
+    display: none;
+  }
+  .cardProducto .descripcionProductos {
+    padding-left: 50px;
   }
 }
 
@@ -324,8 +330,8 @@ body {
   margin-bottom: 100px;
 }
 .ubicacion .mapa {
-  height: 500px;
-  width: 800px;
+  height: 1500px;
+  width: 1800px;
   padding-left: 100px;
   margin-left: -300px;
 }
@@ -364,7 +370,11 @@ body {
   font-size: 30px;
 }
 
-@media screen and (max-width: 320px) {
+.cardLocal {
+  background-color: rgb(241, 183, 233);
+}
+
+@media screen and (min-width: 320px) {
   .ubicacion .mapa {
     width: 250px;
     height: 320px;
@@ -378,6 +388,41 @@ body {
     background-color: antiquewhite;
   }
 }
+@media screen and (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+  .ubicacion .mapa {
+    width: 300px;
+    height: 300px;
+    padding-right: 20px;
+  }
+  .comentarios {
+    size: 50px;
+  }
+  .destacado {
+    background-color: antiquewhite;
+  }
+  .letraColor {
+    font-size: 20px;
+    padding-top: 3px;
+  }
+  .mainH3 {
+    display: none;
+  }
+  .cardLocal {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainH3i {
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .card-group {
+    display: none;
+  }
+}
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
@@ -388,7 +433,7 @@ body {
   background-color: rgb(228, 187, 236);
   border: solid 5px rgb(248, 247, 184);
   margin: 70px;
-  margin-left: 45%;
+  margin-left: 350px;
 }
 
 .main {
@@ -398,9 +443,23 @@ body {
   align-items: center;
 }
 
+.fotoSuscribite {
+  width: 600px;
+  height: 400px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 400px;
+}
+
 .suscribite {
   color: rgb(75, 67, 67);
   margin-top: 100px;
+}
+
+.suscripcion {
+  padding-left: 275px;
+  padding-top: 20px;
 }
 
 .beneficios {
@@ -414,8 +473,18 @@ body {
   border-radius: 4px rgb(245, 65, 197);
 }
 
-.containerSuscripcion body {
-  background-color: linear-gradient(50deg, #fbfcac, #fc6cb6);
+.descuentoProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.descuentoProductos .card {
+  background-color: rgb(247, 149, 247);
+  border: #e5f689 solid 10px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (max-width: 320px) {
@@ -426,6 +495,40 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+@media (min-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+  .destacado {
+    font-size: 20px;
+  }
+  .beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .fotoSuscribite {
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+  .suscripcion {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  .boton {
+    color: rgb(108, 91, 91);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: rgb(245, 231, 242);
+    border: solid 5px rgb(248, 247, 184);
+    margin: 70px;
+    margin-left: 110px;
   }
 }
 

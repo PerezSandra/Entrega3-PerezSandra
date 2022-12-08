@@ -61,8 +61,8 @@ body{
     background-color: rgb(222, 159, 244);
     border: rgb(179, 236, 22) solid 3px ;
   }
-  
 
+  
 
 @media screen and (max-width:320px) {
   body{
@@ -72,16 +72,20 @@ body{
 
   .logo{
     margin: 0;
-    margin-left: -60px;
+    width: 250px;
+    height: 250px;
   }
   .headerH1{
     display: none;
   }
   .imagenCarousel{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
   }
-
+  .letraColor{
+    display: none;
+}
 }
 
 @media screen and (max-width:375px) {
@@ -91,17 +95,15 @@ body{
   }
 
   .logo{
-    height: 20rem;
-    width: 20rem;
-    margin: 0;
-    margin-right: -40px;
+    height:200px ;
+    width: 200px;
   }
   .headerH1{
     display: none;
   }
   .imagenCarousel{
-    width: 150px;
-    height: 150px;
+    width: 5px;
+    height: 5px;
   }
 
 }

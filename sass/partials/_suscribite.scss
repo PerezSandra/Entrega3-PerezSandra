@@ -7,7 +7,7 @@
     background-color: rgb(228, 187, 236);
     border: solid 5px rgb(248, 247, 184) ;
     margin: 70px;
-    margin-left:45%;
+    margin-left: 350px;
   }
   
 
@@ -19,10 +19,24 @@
     
   }
 
-
+  .fotoSuscribite{
+    width: 600px;
+    height: 400px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 400px;
+    }
+    
+  
   .suscribite{
     color: rgb(75, 67, 67);
     margin-top: 100px;
+  }
+  .suscripcion{
+    padding-left: 275px;
+    padding-top: 20px;
+    
   }
 
   .beneficios{
@@ -36,12 +50,22 @@
     border-radius: 4px rgb(245, 65, 197);
   }
 
-  .containerSuscripcion{
-    body {
-      background-color: linear-gradient(50deg,#fbfcac,#fc6cb6 );
-      
-  }
   
+  
+  
+
+  .descuentoProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card {
+      background-color: rgb(247, 149, 247);
+      border: #e5f689 solid 10px;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      font-family: $font-titulos;
+     }
   }
 
   @media  (max-width:320px) {
@@ -56,4 +80,45 @@
       flex-direction: column;
       justify-content: space-around;
     }
+  }
+
+  @media  (min-width:375px) {
+
+    body{
+      overflow-x:hidden;
+    }
+
+    .destacado{
+      font-size: 20px;
+    }
+
+    .beneficios{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .fotoSuscribite{
+      width: 300px;
+      height: 200px;
+      padding-top: 40px;
+      display: flex;
+      flex-direction: row;
+      padding-left: 20px;
+    }
+    .suscripcion{
+      padding-left: 25px;
+      padding-top: 20px;
+      
+    }
+    .boton {
+      color: $color-parrafos ;
+      font-family: $font-titulos ;
+      font-size: $boton;
+      background-color: rgb(245, 231, 242);
+      border: solid 5px rgb(248, 247, 184) ;
+      margin: 70px;
+      margin-left: 110px;
+    }
+    
+
   }
