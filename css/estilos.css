@@ -150,7 +150,7 @@ body {
     margin: 0;
     width: 300px;
     height: 300px;
-    padding-left: 5px;
+    margin-left: 25px;
   }
   .headerH1 {
     display: none;
@@ -302,6 +302,12 @@ body {
   padding-top: 50px;
 }
 
+.descripcionProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .cardProducto {
   background-color: rgb(226, 187, 219);
   border: solid 5px rgb(227, 227, 37);
@@ -310,6 +316,8 @@ body {
 @media (min-width: 318px) and (max-width: 480px) {
   .descripcionProductos {
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
   }
   .hr {
     display: none;
@@ -345,16 +353,18 @@ body {
   padding-right: 25px;
 }
 
-.containerComentarios .boton {
-  margin-left: 60px;
-}
-
 .letraColor {
   color: rgb(192, 30, 189);
   font-size: 30px;
 }
 
+.col {
+  background-color: pink;
+}
+
 .cardLocal {
+  width: 500px;
+  height: 500px;
   background-color: rgb(241, 183, 233);
   display: flex;
   justify-content: space-between;
@@ -374,16 +384,6 @@ body {
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
-.boton {
-  color: rgb(108, 91, 91);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  background-color: rgb(228, 187, 236);
-  border: solid 5px rgb(248, 247, 184);
-  margin: 70px;
-  margin-left: 350px;
-}
-
 .main {
   display: flex;
   flex-direction: row;
@@ -402,7 +402,7 @@ body {
 }
 
 .formulario {
-  background-color: rgb(222, 237, 183);
+  background-color: rgb(218, 228, 108);
 }
 
 .suscribite {
@@ -449,20 +449,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 10px;
+    padding-top: 30px;
   }
   .fotoSuscribite {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 60px;
+    padding-bottom: 80px;
+    padding-left: 5px;
   }
   .descuentoProductos {
     padding-right: 10px;
     padding-left: -10px;
+  }
+  .destacado {
+    padding-left: 50px;
   }
 }
 

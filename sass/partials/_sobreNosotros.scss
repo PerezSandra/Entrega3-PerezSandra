@@ -29,20 +29,18 @@ body{
     padding-left: 25px;
     padding-right: 25px ;
   }
-
-
-  .containerComentarios .boton{
-    margin-left: 60px;
-  }
   
-
-
   .letraColor{
     color: rgb(192, 30, 189);
     font-size: $titulo-secundario;
   }
 
+  .col{
+    background-color: pink;
+  }
   .cardLocal{
+    width: 500px;
+    height: 500px;
     background-color: rgb(241, 183, 233);
     display: flex;
     justify-content: space-between;

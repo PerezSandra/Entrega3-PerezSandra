@@ -27,7 +27,11 @@
 }
 
 }
-
+.descripcionProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .cardProducto{
     background-color: rgb(226, 187, 219);
     border:  solid 5px rgb(227, 227, 37);
@@ -38,6 +42,9 @@
 @media (min-width: 318px) and (max-width: 480px) {
     .descripcionProductos{
         padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+       
     }
     .hr{
         display: none;
