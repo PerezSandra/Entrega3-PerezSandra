@@ -145,43 +145,79 @@ body {
   border: rgb(179, 236, 22) solid 3px;
 }
 
-@media screen and (max-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
+@media (min-width: 318px) and (max-width: 480px) {
   .logo {
     margin: 0;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    padding-left: 5px;
   }
   .headerH1 {
     display: none;
   }
   .imagenCarousel {
-    width: 200px;
-    height: 200px;
-    padding-left: 5px;
+    width: 320px;
+    height: 320px;
+    margin-left: 5px;
   }
   .letraColor {
     display: none;
   }
-}
-@media screen and (max-width: 375px) {
-  body {
-    overflow-x: hidden;
-  }
-  .logo {
-    height: 200px;
-    width: 200px;
-  }
-  .headerH1 {
+  .card-text {
     display: none;
   }
-  .imagenCarousel {
+  .card-title {
+    display: none;
+  }
+}
+/*@media screen and (max-width:320px) {
+  body{
+    overflow-x: hidden;
+
+  }
+
+  .logo{
+    margin: 0;
+    width: 250px;
+    height: 250px;
+  }
+  .headerH1{
+    display: none;
+  }
+  .imagenCarousel{
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
+  }
+  .letraColor{
+    display: none;
+}
+}
+
+@media screen and (max-width:375px) {
+  body{
+    overflow-x: hidden;
+
+  }
+
+  .logo{
+    height:200px ;
+    width: 200px;
+    padding-right: 50px;
+
+
+
+  .headerH1{
+    display: none;
+  }
+  .imagenCarousel{
     width: 5px;
     height: 5px;
   }
+
 }
+
+}*/
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
@@ -270,51 +306,15 @@ body {
   background-color: rgb(226, 187, 219);
   border: solid 5px rgb(227, 227, 37);
 }
-@media screen and (min-width: 320px) {
-  .cardProducto .destacado {
-    font-size: 35px;
-  }
-  .cardProducto .mainH3 {
-    display: none;
-  }
-  .cardProducto .destacado {
-    font-size: 25px;
-  }
-  .cardProducto .descripcionProductos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-    margin-left: 20px;
-  }
-  .cardProducto .descripcionProductos .cardProducto {
-    padding-top: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-  .cardProducto .conejoGrafico {
-    width: 300px;
-    height: 300px;
-    margin-left: 12px;
-  }
-}
-@media screen and (min-width: 375px) {
-  .cardProducto .destacado {
-    font-size: 20px;
-  }
-  .cardProducto .conejoGrafico {
-    height: 100px;
-    width: 100px;
-    margin-top: 30px;
-  }
-  .cardProducto .mainH3 {
-    display: none;
-  }
-  .cardProducto .descripcionProductos {
-    padding-left: 50px;
-  }
-}
 
+@media (min-width: 318px) and (max-width: 480px) {
+  .descripcionProductos {
+    padding-left: 40px;
+  }
+  .hr {
+    display: none;
+  }
+}
 /*COLORES*/
 /*FONTS SIZE*/
 /*FONTS FAMILY*/
@@ -330,39 +330,23 @@ body {
   margin-bottom: 100px;
 }
 .ubicacion .mapa {
-  height: 1500px;
-  width: 1800px;
+  height: 500px;
+  width: 900px;
   padding-left: 100px;
-  margin-left: -300px;
+  margin-left: -100px;
 }
 
 .containerMapa .mapa {
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
-.boton {
-  color: rgb(97, 85, 85);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  background-color: rgb(228, 187, 236);
-  border: solid 5px rgb(248, 247, 184);
+.mainH3i {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .containerComentarios .boton {
   margin-left: 60px;
-}
-
-.containerComentarios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.containerComentarios .comentarios {
-  height: 200px;
-  width: 300px;
-  margin-top: 50px;
-  border: solid 3px rgb(240, 101, 210);
 }
 
 .letraColor {
@@ -372,55 +356,19 @@ body {
 
 .cardLocal {
   background-color: rgb(241, 183, 233);
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 320px) {
-  .ubicacion .mapa {
-    width: 250px;
-    height: 320px;
-    padding-left: 2px;
-    padding-right: -1px;
-  }
-  .comentarios {
-    size: 50px;
-  }
-  .destacado {
-    background-color: antiquewhite;
-  }
-}
-@media screen and (max-width: 375px) {
-  body {
-    overflow-x: hidden;
-  }
-  .ubicacion .mapa {
-    width: 300px;
-    height: 300px;
-    padding-right: 20px;
-  }
-  .comentarios {
-    size: 50px;
-  }
-  .destacado {
-    background-color: antiquewhite;
-  }
-  .letraColor {
-    font-size: 20px;
-    padding-top: 3px;
-  }
-  .mainH3 {
-    display: none;
-  }
-  .cardLocal {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 318px) and (max-width: 480px) {
+  .containerMapa .mapa {
+    height: 20rem;
+    width: 20rem;
+    padding-left: 6px;
   }
   .mainH3i {
-    font-size: 16px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .card-group {
-    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*COLORES*/
@@ -444,12 +392,17 @@ body {
 }
 
 .fotoSuscribite {
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   padding-top: 100px;
   display: flex;
   flex-direction: row;
-  padding-left: 400px;
+  padding-left: 550px;
+  padding-bottom: 20px;
+}
+
+.formulario {
+  background-color: rgb(222, 237, 183);
 }
 
 .suscribite {
@@ -465,6 +418,7 @@ body {
 .beneficios {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 80px;
 }
 
 .containerDescuentos {
@@ -487,7 +441,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 318px) and (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
@@ -495,40 +449,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-}
-@media (min-width: 375px) {
-  body {
-    overflow-x: hidden;
-  }
-  .destacado {
-    font-size: 20px;
-  }
-  .beneficios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding-top: 10px;
   }
   .fotoSuscribite {
     width: 300px;
     height: 200px;
     padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    padding-left: 60px;
   }
-  .suscripcion {
-    padding-left: 25px;
-    padding-top: 20px;
-  }
-  .boton {
-    color: rgb(108, 91, 91);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    background-color: rgb(245, 231, 242);
-    border: solid 5px rgb(248, 247, 184);
-    margin: 70px;
-    margin-left: 110px;
+  .descuentoProductos {
+    padding-right: 10px;
+    padding-left: -10px;
   }
 }
 

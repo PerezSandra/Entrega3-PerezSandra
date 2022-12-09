@@ -20,14 +20,17 @@
   }
 
   .fotoSuscribite{
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     padding-top: 100px;
     display: flex;
     flex-direction: row;
-    padding-left: 400px;
+    padding-left: 550px;
+    padding-bottom: 20px;
     }
-    
+  .formulario  {
+    background-color: rgb(222, 237, 183);
+  }  
   
   .suscribite{
     color: rgb(75, 67, 67);
@@ -42,6 +45,7 @@
   .beneficios{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 80px;
   }
 
   .containerDescuentos {
@@ -68,57 +72,31 @@
      }
   }
 
-  @media  (max-width:320px) {
 
+  @media (min-width: 318px) and (max-width: 480px) {
     body{
       overflow-x:hidden;
     }
-
-
     .beneficios{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-    }
-  }
-
-  @media  (min-width:375px) {
-
-    body{
-      overflow-x:hidden;
-    }
-
-    .destacado{
-      font-size: 20px;
-    }
-
-    .beneficios{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      padding-top: 10px;
     }
     .fotoSuscribite{
       width: 300px;
       height: 200px;
       padding-top: 40px;
+      padding-bottom: 40px;
       display: flex;
       flex-direction: row;
-      padding-left: 20px;
+      padding-left: 60px;
     }
-    .suscripcion{
-      padding-left: 25px;
-      padding-top: 20px;
-      
-    }
-    .boton {
-      color: $color-parrafos ;
-      font-family: $font-titulos ;
-      font-size: $boton;
-      background-color: rgb(245, 231, 242);
-      border: solid 5px rgb(248, 247, 184) ;
-      margin: 70px;
-      margin-left: 110px;
+    .descuentoProductos{
+      padding-right: 10px;
+      padding-left: -10px;
     }
     
-
+    
   }
+  

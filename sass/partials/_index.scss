@@ -62,9 +62,35 @@ body{
     border: rgb(179, 236, 22) solid 3px ;
   }
 
-  
+  @media (min-width: 318px) and (max-width: 480px) {
+    .logo{
+      margin: 0;
+      width: 300px;
+      height: 300px;
+      padding-left: 5px;
+    }
+    .headerH1{
+      display: none;
+    }
+    .imagenCarousel{
+      width: 320px;
+      height: 320px;
+      margin-left: 5px;
+    }
+    .letraColor{
+      display: none;
+  }
+    .card-text{
+      display: none;
+    }
+    .card-title{
+      display: none;
+    }
+    
+    
+  }
 
-@media screen and (max-width:320px) {
+/*@media screen and (max-width:320px) {
   body{
     overflow-x: hidden;
     
@@ -97,7 +123,10 @@ body{
   .logo{
     height:200px ;
     width: 200px;
-  }
+    padding-right: 50px;
+  
+
+
   .headerH1{
     display: none;
   }
@@ -108,3 +137,4 @@ body{
 
 }
 
+}*/
